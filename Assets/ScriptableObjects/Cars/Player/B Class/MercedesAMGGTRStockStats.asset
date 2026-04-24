@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcb7f3a0549951347b74c0bb4198a346, type: 3}
+  m_Name: MercedesAMGGTRStockStats
+  m_EditorClassIdentifier: 
+  topSpeed: 198
+  accelerationPower: 765
+  maxSteerAngle: 20.5
+  brakeStrength: 1160
+  downforceStrength: 1500
+  cameraSettings: {fileID: 11400000, guid: 1dbcb1e22aa6a674e932a6f351ad16d6, type: 2}

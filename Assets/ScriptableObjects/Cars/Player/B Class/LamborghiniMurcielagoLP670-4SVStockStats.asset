@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcb7f3a0549951347b74c0bb4198a346, type: 3}
+  m_Name: LamborghiniMurcielagoLP670-4SVStockStats
+  m_EditorClassIdentifier: 
+  topSpeed: 213
+  accelerationPower: 896.56
+  maxSteerAngle: 20.02
+  brakeStrength: 999.44
+  downforceStrength: 1500
+  cameraSettings: {fileID: 11400000, guid: ed6f2ebce6978314697f0cae9360af20, type: 2}
