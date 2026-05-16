@@ -46161,7 +46161,7 @@ Rigidbody:
   serializedVersion: 4
   m_Mass: 500
   m_Drag: 0.01
-  m_AngularDrag: 0.2
+  m_AngularDrag: 2
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -46212,7 +46212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minSpeed: 0.3
-  maxSpeed: 200
+  maxSpeed: 400
   minPitch: 0.4
   maxPitch: 0
   wallSlideAudio: {fileID: 5241264577628169355}

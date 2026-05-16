@@ -21,7 +21,7 @@ MonoBehaviour:
   downforce: 1500
   tractionAdjustRate: 5
   waypointThreshold: 10
-  steeringJitterStrength: 0.01
+  steeringJitterStrength: 0.1
   waypointOffsetRange: 2
   brakingDelay: 0.6
   maxWaypointThreshold: 20

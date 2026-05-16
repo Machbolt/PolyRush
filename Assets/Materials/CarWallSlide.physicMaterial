@@ -7,8 +7,8 @@ PhysicMaterial:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: CarWallSlide
-  dynamicFriction: 0.15
+  dynamicFriction: 0.2
   staticFriction: 0
-  bounciness: 0
-  frictionCombine: 1
+  bounciness: 0.2
+  frictionCombine: 0
   bounceCombine: 1

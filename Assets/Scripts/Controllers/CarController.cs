@@ -90,13 +90,23 @@ public class CarController : MonoBehaviour
 
             currentSpeed = mphSpeed;
 
-            float steerAngle = horizontalInput * Mathf.Lerp(stats.maxSteerAngle, stats.maxSteerAngle / 2f, currentSpeed / stats.topSpeed);
+            float speedFactor = Mathf.Clamp01(currentSpeed / stats.topSpeed);
+
+            // stronger steering reduction at speed
+            float steerReduction = Mathf.Lerp(1f, 0.35f, speedFactor);
+
+            float steerAngle = horizontalInput * stats.maxSteerAngle * steerReduction;
             frontLeftCollider.steerAngle = steerAngle;
             frontRightCollider.steerAngle = steerAngle;
 
             if (currentSpeed < stats.topSpeed)
             {
-                float torque = verticalInput * stats.accelerationPower;
+                float turnAmount = Mathf.Abs(horizontalInput);
+
+                // reduce torque while turning
+                float turnTorqueReduction = Mathf.Lerp(1f, 0.7f, turnAmount);
+
+                float torque = verticalInput * stats.accelerationPower * turnTorqueReduction;
                 backLeftCollider.motorTorque = torque;
                 backRightCollider.motorTorque = torque;
             }
